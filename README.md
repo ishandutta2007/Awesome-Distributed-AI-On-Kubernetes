@@ -42,37 +42,13 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **Google GKE**
-
-  **Google Kubernetes Engine** with **GKE Autopilot** for fully managed nodes. Features **GKE Dataplane V2** (Cilium-based), **Node Auto-Provisioning**, and **GKE Sandbox** (gVisor) for workload isolation. **Best for**: teams on GCP wanting managed Kubernetes with integrated AI/ML tooling.
-
-
-
-- **AWS EKS**
-
-  **Amazon Elastic Kubernetes Service** with **managed node groups**, **Fargate** for serverless pods, and **EKS Anywhere** for hybrid. **The AWS-native choice**—integrates with IAM, VPC, CloudWatch, and **EFA** for multi-node GPU communication . **Best for**: teams on AWS running distributed training with FSx for Lustre and EFA.
-
-
-
-- **Azure AKS**
-
-  **Azure Kubernetes Service** with **Kueue integration** for Ray AI workloads . Features **GPU node pools**, **Workload Identity** for credential-free access to Azure Blob Storage, and **Terraform/Helm** provisioning. **Best for**: teams on Azure wanting managed Kubernetes with Ray and Kueue for distributed AI .
-
-
-
-- **Red Hat OpenShift**
-
-  **Enterprise Kubernetes platform** with **OpenShift AI** (built on Kubeflow) for ML workloads. Features **built-in CI/CD**, **security policies**, and **Operator Lifecycle Manager**. **Best for**: enterprises needing compliance-heavy Kubernetes with integrated MLOps.
-
-
-
-- **Databricks**
-
-  **Managed lakehouse platform** with **managed Kubernetes** under the hood. Features **MLflow integration**, **Delta Lake**, and **Unity Catalog** governance. **Best for**: teams wanting managed infrastructure without Kubernetes operational burden.
-
-
+| Platform | Company Valuation / Market Cap | Pricing (Starting Tier) | Free Tier / Trial Limits | Description | Best For |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Google GKE** | ~$4.1T (Alphabet Market Cap) | $0.10/cluster/hour (approx. $74.40/month standard control plane fee; compute billed separately) | **$74.40/month recurring credits** per billing account (covers 100% of 1 zonal Standard or Autopilot cluster control plane) + $300 90-day GCP new account trial credits | **Google Kubernetes Engine** with **GKE Autopilot** for fully managed nodes. Features **GKE Dataplane V2** (Cilium-based), **Node Auto-Provisioning**, and **GKE Sandbox** (gVisor) for workload isolation. | Teams on GCP wanting managed Kubernetes with integrated AI/ML tooling. |
+| **Azure AKS** | ~$3.9T (Microsoft Market Cap) | $0.00/hour for Free cluster management tier; Standard tier starts at $0.10/cluster/hour (approx. $73/month with 99.9% uptime SLA) | **Free Forever Tier**: $0/hour control plane for clusters up to 1,000 nodes (best-effort SLA; compute billed separately) + $200 30-day Azure trial credits | **Azure Kubernetes Service** with **Kueue integration** for Ray AI workloads. Features **GPU node pools**, **Workload Identity** for credential-free access to Azure Blob Storage, and **Terraform/Helm** provisioning. | Teams on Azure wanting managed Kubernetes with Ray and Kueue for distributed AI. |
+| **AWS EKS** | ~$2.8T (Amazon Market Cap) | $0.10/cluster/hour (approx. $73/month per standard cluster control plane; compute/EC2 billed separately) | **No permanent free control plane tier**; new AWS accounts receive a 6-month trial plan with **$100 sign-up credits** (up to $200 via console onboarding tasks) applicable toward EKS & EC2 compute | **Amazon Elastic Kubernetes Service** with **managed node groups**, **Fargate** for serverless pods, and **EKS Anywhere** for hybrid. **The AWS-native choice**—integrates with IAM, VPC, CloudWatch, and **EFA** for multi-node GPU communication. | Teams on AWS running distributed training with FSx for Lustre and EFA. |
+| **Databricks** | ~$134B (Private Valuation) | $0.07/DBU (Genie/Light) to $0.15–$0.20/DBU for Standard Data Engineering Jobs; compute billed separately | **Free Edition (Forever Free)**: Non-commercial personal tier with daily fair-use quotas, 1 serverless SQL warehouse (2X-Small), and max 5 concurrent jobs. **Business Free Trial**: 14 days with **$400 in usage credits** | **Managed lakehouse platform** with **managed Kubernetes** under the hood. Features **MLflow integration**, **Delta Lake**, and **Unity Catalog** governance. | Teams wanting managed infrastructure without Kubernetes operational burden. |
+| **Red Hat OpenShift** | ~$34B (IBM Acquisition Valuation; IBM Market Cap ~$225B) | $0.171/hour per 4 vCPUs (ROSA on-demand service fee) or $0.09/hour per 4 vCPUs (ROSA Hosted Control Plane) + infrastructure costs | **Developer Sandbox (30-day free environment, renewable)**: Up to 3 vCPU cores, 14 GB RAM, and 40 GB persistent storage. **Self-Managed 60-day free product trial** (user covers underlying cloud infrastructure) | **Enterprise Kubernetes platform** with **OpenShift AI** (built on Kubeflow) for ML workloads. Features **built-in CI/CD**, **security policies**, and **Operator Lifecycle Manager**. | Enterprises needing compliance-heavy Kubernetes with integrated MLOps. |
 
 ## Open-Source GitHub Projects
 
